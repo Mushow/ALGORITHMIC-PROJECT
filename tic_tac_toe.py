@@ -8,7 +8,7 @@ def print_board(player, winner=None):
     print(" " + player[6] + " | " + player[7] + " | " + player[8] + " ")
     if winner:
         print(f"""* Game over: {winner} won. *""")
-
+        
 def morpion():
     player = "X"
     tour = 0
