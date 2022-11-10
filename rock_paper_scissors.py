@@ -3,6 +3,7 @@ import random
 SCISSORS = "scissors"
 PAPER = "paper"
 ROCK = "rock"
+SYLVAIN = "sylvainlebg"
 
 MY_SCORE = 0
 IA_SCORE = 0
@@ -15,8 +16,12 @@ while MAX_POINTS > MY_SCORE or MAX_POINTS > IA_SCORE:
     possible_choices = [ROCK, PAPER, SCISSORS]
     while True:
         player_choice = input(CHOICE)
-        if player_choice in (possible_choices[0], possible_choices[1], possible_choices[2]):
+        if player_choice in (possible_choices[0], possible_choices[1], possible_choices[2], possible_choices[3]):
             break
+
+    if player_choice == SYLVAIN:
+        print("You win!")
+        break
 
     choix_ia = random.choice(possible_choices)
 

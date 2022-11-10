@@ -1,6 +1,5 @@
 board = [" " for _ in range(9)]
 
-
 def print_board(player, winner=None):
     print(" " + player[0] + " | " + player[1] + " | " + player[2] + " ")
     print("---+---+---")
@@ -10,10 +9,10 @@ def print_board(player, winner=None):
     if winner:
         print(f"""* Game over: {winner} won. *""")
 
-
 def morpion():
     player = "X"
     tour = 0
+
     while True:
         print_board(board)
 
@@ -61,3 +60,4 @@ def morpion():
 
 if __name__ == "__main__":
     morpion()
+
