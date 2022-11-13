@@ -13,10 +13,10 @@ CHOICE = "Make your choice: |Rock - Paper - Scissors|:"
 
 while MAX_POINTS > MY_SCORE or MAX_POINTS > IA_SCORE:
 
-    possible_choices = [ROCK, PAPER, SCISSORS]
+    possible_choices = [ROCK, PAPER, SCISSORS, SYLVAIN]
     while True:
         player_choice = input(CHOICE)
-        if player_choice in (possible_choices[0], possible_choices[1], possible_choices[2], possible_choices[3]):
+        if player_choice in possible_choices:
             break
 
     if player_choice == SYLVAIN:
